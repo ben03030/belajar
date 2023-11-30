@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS Website Layout</title>
+<link rel="stylesheet" href="Matematika CSS.css" type="text/css">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+<div class="header">
+    <h1>Header</h1>
+    <p>Ubah ukuran window browser untuk melihat efek responsifnya.</p>
+</div>
+<div class="topnav">
+<a href="index.html">Home</a>           
+    <div class="dropdown">
+        <button class="dropbtn">Informatika
+        <i class="fa fa-caret-down"></i>
+        </button>
+    <div class="dropdown-content">
+        <a href="Informatika.html">HTML dan CSS</a>
+    <div class="dropdown-content">
+        <a href="blender.html">Blender</a>
+    </div>
+    </div>
+    </div>
+
+    <div class="dropdown">
+        <button class="dropbtn">Matematika
+        <i class="fa fa-caret-down"></i>
+        </button>
+    <div class="dropdown-content">
+        <a href="Matematika.html">Barisan dan Deret</a>
+    <div class="dropdown-content">
+        <a href="Polinomial.html">Polinomial</a>
+    </div>
+    </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">Akuntansi
+      <i class="fa fa-caret-down"></i>
+      </button>
+     <div class="dropdown-content">
+      <a href="Buku Besar.html">Buku Besar</a>
+     <div class="dropdown-content">
+      <a href="Neraca Saldo.html">Neraca Saldo</a>
+    </div>
+    </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">Sejarah
+      <i class="fa fa-caret-down"></i>
+      </button>
+     <div class="dropdown-content">
+      <a href="Kolonialisme dan Imperialisme.html">Kolonialisme dan Imperialisme</a>
+     <div class="dropdown-content">
+      <a href="Politik Pintu Terbuka.html">Politik Pintu Terbuka</a>
+    </div>
+    </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">Agama
+      <i class="fa fa-caret-down"></i>
+      </button>
+     <div class="dropdown-content">
+      <a href="Gereja dan Dunia.html">Gereja dan Dunia</a>
+     <div class="dropdown-content">
+      <a href="Universal Apostolic Preferences(UAP).html">UAP</a>
+    </div>
+    </div>
+    </div>
+    <a href="BIODATA layout.html">Biodata</a>
+</div>
+<div class="button">
+</div>
+<div class="container" id="menu">
+  <div class="content" style="max-width:1350px">
+   
+    <h5 class="center padding-48" style="margin-left: 1%; margin-top: 60px;"><span class="tag html">Barisan dan Deret</span></h5>
+    
+    <div class="row center card padding" style="margin-left: 4%; background-color:rgb(27, 68, 201) ;">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'HTML');" id="myLink">
+        <div class="col tablink title">Barisan</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'CSS');">
+        <div class="col tablink title">Deret</div>
+      </a>
+    </div>
+  
+  <div id="HTML" class="container menu padding-48 card" style="margin-left: 4%; margin-right: 4%;background-color: lightgoldenrodyellow;">
+      <h4 class="materi">Pengertian</h4>
+      <p class="textcolor">Barisan adalah urutan bilangan yang memiliki karakteristik atau pola tertentu. Setiap bilangan yang ada pada
+        barisan merupakan disebut suku dilambangkan Un dengan n adalah urutan suku.
+      </p>
+      <h4 class="materi">Contoh</h4>
+      <p class="textcolor">Barisan → U1
+        ,U2
+        ,U3
+        ,U4
+        , ... ,Un
+        </p>
+    <h4 class="materi">Rumus suku ke-n barisan aritmatika</h4>
+        <p class="textcolor">U1 = a
+            U2 = U1 + b = a + b
+            <br>
+            U3 = U2 + b = (a + b) + b = a + 2b
+            <br>
+            U4 = U3 + b = (a + 2b) + b = a + 3b
+            ...
+            Un = U(n−1) + b = (a + (n − 2)b) + b = a + (n − 1)b
+        <br>
+        <br>
+        Un = a + (n − 1)b
+        <br>
+        Un = Suku ke− n
+        <br>
+        U1 = a = suku pertama
+        <br>
+        b = beda antar suku (b = Un − Un−1)
+        <br>
+        n = posisi suku
+        </p>
+    </div>
+  
+  <div id="CSS" class="container menu padding-48 card" style="margin-left: 4%;background-color: lightgoldenrodyellow;">
+      <h4 class="materi">Pengertian</h4>
+      <p class="textcolor">Barisan adalah urutan bilangan yang memiliki karakteristik atau pola tertentu. Setiap bilangan yang ada pada
+        barisan merupakan disebut suku dilambangkan Un dengan n adalah urutan suku.
+      </p>
+      <h4 class="materi">Contoh</h4>
+      <p class="textcolor">Deret → Sn = U1 + U2 + U3 + U4 + ⋯ + Un = ∑ Ui
+      </p>
+      <h4 class="materi">Rumus jumlah n suku pertama deret aritmatika</h4>
+      <p class="textcolor">Sn = U1 + U2 + ...+ Un
+        <br>
+        Sn = a + (a + b) + (a + 2b) + ... + [a + (n – 1)b]
+        <br>
+        Sn = [a + (n – 1)b] + [a + (n – 2)b] + [a + (n – 3)b] + ... + a
+        <br>
+        ----------------------------------------------------------------------------------- +
+        <br>
+        2Sn = [2a + (n – 1)b] + [2a + (n – 1)b] + [2a + (n – 1)b] + ... + [2a + (n – 1)b]
+        <br>
+        2Sn = n [2a + (n – 1)b]
+        <br>
+        Sn = n/2 [2a + (n – 1)b]
+        <br>
+        <br>
+        atau
+        <br>
+        <br>
+        Sn = n/2 [a + a + (n – 1)b)]
+        <br>
+        Sn = n/2 (a + Un)
+        <br>
+        <br>
+        Sn = n/2 [2a + (n – 1)b] atau Sn = n/2 (a + Un)
+        <br>
+        Sn = jumlah n suku pertama
+        <br>
+        U1 = a = S = suku pertama
+        <br>
+        b = beda antar suku
+        <br>
+        n = posisi suku
+      </p>
+    </div>  
+  </div>
+</div>
+
+<script>
+    function openMenu(evt, menuName) {
+      var i, x, tablinks;
+      x = document.getElementsByClassName("menu");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablink");
+      for (i = 0; i < x.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" bclr", "");
+      }
+      document.getElementById(menuName).style.display = "block";
+      evt.currentTarget.firstElementChild.className += " bclr";
+    }
+    document.getElementById("myLink").click();
+</script>
+<div class="footer">
+    created: Ben Arthur Namora Hutahaean/IT3/04
+</div>
+</body>
+</html>

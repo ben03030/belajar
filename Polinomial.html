@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS Website Layout</title>
+<link rel="stylesheet" href="Blender CSS.css" type="text/css">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+<div class="header">
+    <h1>Header</h1>
+    <p>Ubah ukuran window browser untuk melihat efek responsifnya.</p>
+</div>
+<div class="topnav">
+<a href="index.html">Home</a>           
+    <div class="dropdown">
+        <button class="dropbtn">Informatika
+        <i class="fa fa-caret-down"></i>
+        </button>
+    <div class="dropdown-content">
+        <a href="Informatika.html">HTML dan CSS</a>
+    <div class="dropdown-content">
+        <a href="blender.html">Blender</a>
+    </div>
+    </div>
+    </div>
+
+    <div class="dropdown">
+        <button class="dropbtn">Matematika
+        <i class="fa fa-caret-down"></i>
+        </button>
+    <div class="dropdown-content">
+        <a href="Matematika.html">Barisan dan Deret</a>
+    <div class="dropdown-content">
+        <a href="Polinomial.html">Polinomial</a>
+    </div>
+    </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">Akuntansi
+      <i class="fa fa-caret-down"></i>
+      </button>
+     <div class="dropdown-content">
+      <a href="Buku Besar.html">Buku Besar</a>
+     <div class="dropdown-content">
+      <a href="Neraca Saldo.html">Neraca Saldo</a>
+    </div>
+    </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">Sejarah
+      <i class="fa fa-caret-down"></i>
+      </button>
+     <div class="dropdown-content">
+      <a href="Kolonialisme dan Imperialisme.html">Kolonialisme dan Imperialisme</a>
+     <div class="dropdown-content">
+      <a href="Politik Pintu Terbuka.html">Politik Pintu Terbuka</a>
+    </div>
+    </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">Agama
+      <i class="fa fa-caret-down"></i>
+      </button>
+     <div class="dropdown-content">
+      <a href="Gereja dan Dunia.html">Gereja dan Dunia</a>
+     <div class="dropdown-content">
+      <a href="Universal Apostolic Preferences(UAP).html">UAP</a>
+    </div>
+    </div>
+    </div>
+    <a href="BIODATA layout.html">Biodata</a>
+</div>
+
+</div>
+<div class="button">
+</div>
+<div class="container" id="menu">
+  <div class="content" style="max-width:1350px">
+   
+    <h5 class="center padding-48" style="margin-left: 1%; margin-top: 60px;"><span class="tag html">Polinomial</span></h5>
+    
+    <div class="row center card padding" style="margin-left: 4%; background-color:rgb(27, 68, 201) ;">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'HTML');" id="myLink">
+        <div class="col tablink title">Penjelasan</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'CSS');">
+        <div class="col tablink title">Contoh</div>
+      </a>
+    </div>
+  
+  <div id="HTML" class="container menu padding-48 card" style="margin-left: 4%; margin-right: 4%;background-color: lightgoldenrodyellow;">
+      <h4 class="materi">Pengertian Polinomial</h4>
+      <p class="textcolor">Polinomial atau suku banyak adalah suatu bentuk aljabar yang terdiri atas beberapa suku dan memuat satu variabel berpangkat bulat positif.
+      </p>
+      <h4 class="materi">Ciri-Ciri Polinomial</h4>
+      <p class="textcolor">
+        Hanya mempunyai satu variabel.
+        <br>
+        Variabel harus berpangkat bulat positif dan tidak harus berurutan.
+        <br>
+        Koefisien variabel tidak harus sama dan boleh berbentuk pecahan.
+        </p>
+    </div>
+  
+  <div id="CSS" class="container menu padding-48 card" style="margin-left: 4%;background-color: lightgoldenrodyellow;">
+    <h4 class="Gambaran umum polinomial"></h4>
+    <img src="download.jpg"">"
+    </div>  
+  </div>
+</div>
+
+<script>
+    function openMenu(evt, menuName) {
+      var i, x, tablinks;
+      x = document.getElementsByClassName("menu");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablink");
+      for (i = 0; i < x.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" bclr", "");
+      }
+      document.getElementById(menuName).style.display = "block";
+      evt.currentTarget.firstElementChild.className += " bclr";
+    }
+    document.getElementById("myLink").click();
+</script>
+<div class="footer">
+  created: Ben Arthur Namora Hutahaean/IT3/04
+</div>
+</body>
+</html>

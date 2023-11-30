@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS Website Layout</title>
+<link rel="stylesheet" href="Blender CSS.css" type="text/css">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+<div class="header">
+    <h1>Header</h1>
+    <p>Ubah ukuran window browser untuk melihat efek responsifnya.</p>
+</div>
+<div class="topnav">
+<a href="index.html">Home</a>           
+    <div class="dropdown">
+        <button class="dropbtn">Informatika
+        <i class="fa fa-caret-down"></i>
+        </button>
+    <div class="dropdown-content">
+        <a href="Informatika.html">HTML dan CSS</a>
+    <div class="dropdown-content">
+        <a href="blender.html">Blender</a>
+    </div>
+    </div>
+    </div>
+
+    <div class="dropdown">
+        <button class="dropbtn">Matematika
+        <i class="fa fa-caret-down"></i>
+        </button>
+    <div class="dropdown-content">
+        <a href="Matematika.html">Barisan dan Deret</a>
+    <div class="dropdown-content">
+        <a href="Polinomial.html">Polinomial</a>
+    </div>
+    </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">Akuntansi
+      <i class="fa fa-caret-down"></i>
+      </button>
+     <div class="dropdown-content">
+      <a href="Buku Besar.html">Buku Besar</a>
+     <div class="dropdown-content">
+      <a href="Neraca Saldo.html">Neraca Saldo</a>
+    </div>
+    </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">Sejarah
+      <i class="fa fa-caret-down"></i>
+      </button>
+     <div class="dropdown-content">
+      <a href="Kolonialisme dan Imperialisme.html">Kolonialisme dan Imperialisme</a>
+     <div class="dropdown-content">
+      <a href="Politik Pintu Terbuka.html">Politik Pintu Terbuka</a>
+    </div>
+    </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">Agama
+      <i class="fa fa-caret-down"></i>
+      </button>
+     <div class="dropdown-content">
+      <a href="Gereja dan Dunia.html">Gereja dan Dunia</a>
+     <div class="dropdown-content">
+      <a href="Universal Apostolic Preferences(UAP).html">UAP</a>
+    </div>
+    </div>
+    </div>
+    <a href="BIODATA layout.html">Biodata</a>
+</div>
+
+</div>
+<div class="button">
+</div>
+<div class="container" id="menu">
+  <div class="content" style="max-width:1350px">
+   
+    <h5 class="center padding-48" style="margin-left: 1%; margin-top: 60px;"><span class="tag html">Gereja dan Dunia</span></h5>
+    
+    <div class="row center card padding" style="margin-left: 4%; background-color:rgb(27, 68, 201) ;">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'HTML');" id="myLink">
+        <div class="col tablink title">Penjelasan</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'CSS');">
+        <div class="col tablink title">Gereja itu siapa?</div>
+      </a>
+    </div>
+  
+  <div id="HTML" class="container menu padding-48 card" style="margin-left: 4%; margin-right: 4%;background-color: lightgoldenrodyellow;">
+      <h4 class="materi">Ecclesia Semper Reformanda</h4>
+      <p class="textcolor">Ungkapan Ecclesia reformata semper reformanda atau Gereja Reformasi yang terus membaharui diri menjadi tema sentral Perayaan 500 Tahun Reformasi Gereja yang dicetuskan Martin Luther di tahun 1517.
+      </p>
+      <h4 class="materi">Ajaran sosial gereja</h4>
+      <p class="textcolor">
+        Bentuk keterlibatan Gereja di tengah dunia dengan segala
+        masalahnya,
+        Ajaran Sosial Gereja memperjuangkan nilai Kerajaan
+        Allah seperti Keadilan, Keutuhan ciptaan, kesejahteraan
+        dan lain sebagainya
+        </p>
+    </div>
+  
+  <div id="CSS" class="container menu padding-48 card" style="margin-left: 4%;background-color: lightgoldenrodyellow;">
+    <h4 class="materi"></h4>
+    Gereja adalah persekutuan orang yang beriman kepada
+    Kristus, yang mempunyai tujuan melanjutkan Karya
+    Kristus di dunia untuk mewujudkan KERAJAAN ALLAH
+    <br>
+    <br>
+    <h3 class="materi">Apa itu ajaran sosial gereja?</h3>
+    <p class="materi">Latar belakang ditulisnya Ajaran Sosial Gereja (ASG)</p>
+    <p class="textcolor">
+    Peristiwa revolusi dan sosial melatar belakangi ajaran
+    sosial gereja ini ditulis, karena tenaga digantikan oleh
+    mesin. Sementara jumlah buruh yang jumlahnya besar
+    kehilangan pekerjaan.
+    </p>
+    </div>  
+  </div>
+</div>
+
+<script>
+    function openMenu(evt, menuName) {
+      var i, x, tablinks;
+      x = document.getElementsByClassName("menu");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablink");
+      for (i = 0; i < x.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" bclr", "");
+      }
+      document.getElementById(menuName).style.display = "block";
+      evt.currentTarget.firstElementChild.className += " bclr";
+    }
+    document.getElementById("myLink").click();
+</script>
+<div class="footer">
+  created: Ben Arthur Namora Hutahaean/IT3/04
+</div>
+</body>
+</html>

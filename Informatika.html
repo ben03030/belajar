@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS Website Layout</title>
+<link rel="stylesheet" href="Informatika CSS.css" type="text/css">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+<div class="header">
+    <h1>Header</h1>
+    <p>Ubah ukuran window browser untuk melihat efek responsifnya.</p>
+</div>
+<div class="topnav">
+<a href="index.html">Home</a>           
+    <div class="dropdown">
+        <button class="dropbtn">Informatika
+        <i class="fa fa-caret-down"></i>
+        </button>
+    <div class="dropdown-content">
+        <a href="Informatika.html">HTML dan CSS</a>
+    <div class="dropdown-content">
+        <a href="blender.html">Blender</a>
+    </div>
+    </div>
+    </div>
+
+    <div class="dropdown">
+        <button class="dropbtn">Matematika
+        <i class="fa fa-caret-down"></i>
+        </button>
+    <div class="dropdown-content">
+        <a href="Matematika.html">Barisan dan Deret</a>
+    <div class="dropdown-content">
+        <a href="Polinomial.html">Polinomial</a>
+    </div>
+    </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">Akuntansi
+      <i class="fa fa-caret-down"></i>
+      </button>
+     <div class="dropdown-content">
+      <a href="Buku Besar.html">Buku Besar</a>
+     <div class="dropdown-content">
+      <a href="Neraca Saldo.html">Neraca Saldo</a>
+    </div>
+    </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">Sejarah
+      <i class="fa fa-caret-down"></i>
+      </button>
+     <div class="dropdown-content">
+      <a href="Kolonialisme dan Imperialisme.html">Kolonialisme dan Imperialisme</a>
+     <div class="dropdown-content">
+      <a href="Politik Pintu Terbuka.html">Politik Pintu Terbuka</a>
+    </div>
+    </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">Agama
+      <i class="fa fa-caret-down"></i>
+      </button>
+     <div class="dropdown-content">
+      <a href="Gereja dan Dunia.html">Gereja dan Dunia</a>
+     <div class="dropdown-content">
+      <a href="Universal Apostolic Preferences(UAP).html">UAP</a>
+    </div>
+    </div>
+    </div>
+    <a href="BIODATA layout.html">Biodata</a>
+</div>
+<div class="button">
+</div>
+<div class="container" id="menu">
+  <div class="content" style="max-width:1350px">
+   
+    <h5 class="center padding-48" style="margin-left: 1%; margin-top: 60px;"><span class="tag html">HTML dan CSS</span></h5>
+    
+    <div class="row center card padding" style="margin-left: 4%; background-color:rgb(27, 68, 201) ;">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'HTML');" id="myLink">
+        <div class="col tablink title">HTML</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'CSS');">
+        <div class="col tablink title">CSS</div>
+      </a>
+    </div>
+  
+  <div id="HTML" class="container menu padding-48 card" style="margin-left: 4%; margin-right: 4%;background-color: lightgoldenrodyellow;">
+      <h4 class="materi">Hypertext Markup Language</h4>
+      <p class="textcolor">HTML bukan termasuk bahasa
+            pemrograman, melainkan HTML adalah markup standart
+            yang digunakan dalam menampilkan halaman website.
+            Menurut sejarahnya, HTML pertama kali diperkenalkan pada
+            tahun 1990-an. Tim Berners-Lee pada tahun 1989
+            menciptakan HTML sederhana namun sangat efektif untuk
+            pengkodean dokumen elektronik. Web browser pada zaman
+            itu digunakan untuk membuka dokumen-dokumen dengan
+            format HTML. Pada saat tahun 90-an inilah yang menjadi
+            sejarah lahirnya HTML sehingga dinamakan HTML versi 1.0.
+      </p>
+      <h4 class="materi">Kegunaan</h4>
+      <p class="textcolor">
+           Membuat format text / font style<br>
+           Membuat garis<br>
+           Membuat paragraph<br>
+           Menampilkan gambar<br>
+           Membuat heading<br>
+           Membuat tabel<br>
+           Membuat list bullet & numbering<br>
+           Membuat form<br>
+           Membuat tombol<br>
+           Menampilkan audio/video
+        </p>
+    </div>
+  
+  <div id="CSS" class="container menu padding-48 card" style="margin-left: 4%;background-color: lightgoldenrodyellow;">
+    <h4 class="materi">Cascading Style Sheet</h4>
+  <p style="color: rgb(70, 70, 70)"> CSS itu bukan termasuk ke dalam bahasa pemrograman, tetapi CSS adalah
+      bahasa markup.
+  </p>
+  <p style="color: rgb(70, 70, 70)"> Karena di dalam CSS ini tidak terdapat deklarasi variabel, aritmatika,
+      perulangan dan perintah-perintah lainnya.
+  </p>
+  <p style="color: rgb(70, 70, 70)"> CSS dugunakan untuk memperindah tampilan website dan untuk mengatur
+      tataletak tampilan, sehingga lebih enak dipandang.
+  </p>
+  <p style="color: rgb(70, 70, 70)"> HTML dan CSS adalah bagian tak terpisahkan dari website modern saat
+      ini. HTMLdigunakan untuk membuat konten atau kerangka dasar layout
+      halaman web, sedangkan css digunakan untuk memperindah tampilan web
+      dengan warna, font, border
+  </p>
+    </div>  
+  </div>
+</div>
+
+<script>
+    function openMenu(evt, menuName) {
+      var i, x, tablinks;
+      x = document.getElementsByClassName("menu");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablink");
+      for (i = 0; i < x.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" bclr", "");
+      }
+      document.getElementById(menuName).style.display = "block";
+      evt.currentTarget.firstElementChild.className += " bclr";
+    }
+    document.getElementById("myLink").click();
+</script>
+<div class="footer">
+  created: Ben Arthur Namora Hutahaean/IT3/04
+</div>
+</body>
+</html>
